@@ -1,29 +1,14 @@
-
-@supports not (text-stroke: 1px)
-{
+@supports not ((-webkit-text-stroke: 1px) or (text-stroke: 1px)) {
   .card__label {
     -webkit-text-stroke: none;
     text-stroke: none;
-    font-family: var(--accent-font);
-    font-variation-settings: 'wght' var(--wgt-accent);
-    text-shadow: 1px 1px 0px white, 
-     -1px -1px 0px white, 
-      1px -1px 0px white, 
-      -1px 1px 0px white;
-  }
-}
-@supports not (-webkit-text-stroke: 1px) {
-  .card__label {
-    -webkit-text-stroke: none;
-    text-stroke: none;
-    font-family: var(--accent-font);
-    font-variation-settings: 'wght' var(--wgt-accent);
     text-shadow: 1px 1px 0px white,
-     -1px -1px 0px white,
-      1px -1px 0px white,
-      -1px 1px 0px white;
+                 -1px -1px 0px white,
+                  1px -1px 0px white,
+                  -1px 1px 0px white;
   }
 }
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -31,18 +16,20 @@
   background-image: var(--gradient-background);
   background-size: 1440px 960px; 
   background-repeat: no-repeat;
-  font-family: var(--wgt-text);
+  font-family: var(--main-font);
   font-variation-settings: 'wght' var(--wgt-text);
   
 }
 
+
+/* 
 .card__label,
 .card__like-button,
 .button__text,
 .header__title {
   font-family: var(--accent-font);
   font-variation-settings: normal; 
-}
+} */
 
 .main {
   display: flex;
@@ -112,7 +99,7 @@
   top: 25px;
   right: 25px;
   font-family: var(--accent-font);
-  font-variation-settings: 'wght' var(--wgt-accent);
+  font-variation-settings: 'wght' var(--wgt-text);
   -webkit-text-stroke: 1px black;
   mix-blend-mode: hard-light;
   opacity: 0.5;

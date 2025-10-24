@@ -7,7 +7,6 @@
     --button-font-size: 14px;
     --dinamic-font-title: clamp(49px, 65px, 65px);
     --dinamic-font-text: clamp(14px, 23px, 23px);
-    /* Ниже будут переменные для градиент фона */
     --gradient-background:
     repeating-linear-gradient(
         90deg,
@@ -24,11 +23,12 @@
         #e7e7e7 0%, #e7e7e7 1%,
         #1a1a1a 100%
     );
-    /* ниже будут перменные для ширины и высоты блока */
     --block-width: clamp(375px, 700px, 90vw);
     --block-height: clamp(327px, 368px, 90vh);
+}
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
+  :root {
     --block-height: clamp(327px, 368px, 0vh);
-    }
+  }
 }
