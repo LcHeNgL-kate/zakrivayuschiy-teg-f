@@ -27,12 +27,21 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--wgt-text);
   font-size: var(--main-font-size);
   background-image: var(--gradient-background);
   background-size: 1440px 960px; 
   background-repeat: no-repeat;
+  font-family: var(--wgt-text);
+  font-variation-settings: 'wght' var(--wgt-text);
+  
+}
+
+.card__label,
+.card__like-button,
+.button__text,
+.header__title {
+  font-family: var(--accent-font);
+  font-variation-settings: normal; 
 }
 
 .main {
@@ -76,6 +85,7 @@
   
 }
 
+/* карточные свойства начало */
 .card__wrap {
   display: flex;
   flex-direction: column;
@@ -103,7 +113,7 @@
   right: 25px;
   font-family: var(--accent-font);
   font-variation-settings: 'wght' var(--wgt-accent);
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px black;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   font-size: var(--button-font-size);
@@ -126,7 +136,7 @@
 .card__wrap .card__like-button {
   align-self: flex-end;
 }
-/* qsdasdasdasdasdasdasdasdasdasdasdasdasda */
+
 
 .like-icon img {
   transition: content 150ms ease;
@@ -140,17 +150,10 @@
   animation: heartHoverAnimation  0.5s steps(1) forwards;
 }
 
-/* .like-icon:not(:hover) img {
-  content: url('../svg/heart-initial.svg');
-} */
 
 .like-icon:active img {
   animation: heartHoldAnimation 1s steps(6) forwards;
 }
-
-
-
-/* asdasdasdasdasdasdasdasdasdasdasdasdasda */
 
 .card__icon-button {
   border: none;
@@ -163,7 +166,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .buttons__wrap {
   display: flex;
@@ -194,8 +196,7 @@
   justify-content: center;
   align-items: center;
 }
-
-.dialog-wrap .card__disket-button {width: 293px;padding: 12.5px 0;align-self: center;/* margin-bottom: 30px; */}
+.dialog-wrap .card__disket-button {width: 293px;padding: 12.5px 0;align-self: center;}
 
 .card__disket-button::before, .card__like-button::before {
   content: "";
@@ -206,24 +207,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%); /* Начинаем с полного смещения влево */
-  transition: transform 0.5s ease-in-out; /* Параметры перехода */
+  transform: translateX(-100%); 
+  transition: transform 0.5s ease-in-out; 
 }
 
 .card__disket-button:hover::before, .card__like-button:hover::before {
-  transform: translateX(0); /* При наведении перемещаем псевдоэлемент в исходное положение */
+  transform: translateX(0); 
 }
 
 .button__text {
-  color: white; /* Цвет текста */
-  mix-blend-mode: difference; /* Режим смешивания */
-  position: relative; /* Относительное позиционирование */
-  z-index: 1; /* Убедимся, что текст выше псевдоэлемента */
+  color: white; 
+  mix-blend-mode: difference; 
+  position: relative; 
+  z-index: 1; 
 }
-
-/* .card__icon-button:focus {
-  outline: 2px solid black;
-} */
 
 .card__disket-button:focus, .card__like-button:focus {
   outline: transparent;
@@ -269,7 +266,8 @@
   align-self: self-end;
   right: 170px;
 }
-/* qweqweqweqweqweqweqweqweqweqweqweqwe */
+
+/* конеч кнопка про дискеты */
 
 .dialog-wrap {
   display: none;
@@ -306,13 +304,14 @@
   height: 39px;
 }
 
-/* qweqweqweqweqweqweqweqweqweqweqweqweqwe */
+/* рамерные изменения  */
+
 @media (max-width: 1440px) {
   .card__image {
     height: 696px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 300px) {
   .header {
     padding: 121px 16px;
   }
@@ -350,7 +349,6 @@
 
   .dialog-wrap[open] .modal-content {
     grid-template-columns: auto;
-    /* Другие стили для адаптивности */
   }
 
   .dialog-wrap .card__disket-button {
