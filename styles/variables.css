@@ -4,10 +4,12 @@
   --text-weight: 410;    
   --heading-weight: 715;
   --accent-weight: 400; 
-    /* Резиновые значения для шапки */
+
   --header-width: clamp(375px, 80%, 700px);
   --header-height: clamp(250px, 40vh, 368px);
   --logo-size: clamp(49px, 10vw, 65px);
+/* 
+  спасибо за сайт */
   --title-font-size: clamp(1.25rem, 0.6667rem + 3.1111vw, 3rem);
   --subtitle-font-size: clamp(0.875rem, 0.6875rem + 1vw, 1.4375rem);
 
@@ -18,8 +20,6 @@
   --text: #000;
   --card-padding: 25px;
   --transition-mid: 0.3s;
-
-  /* heart SVG */
   --sparks-fill-clr: #f00;
   --sparks-fill-clr-transparent: rgb(255 0 0 / 0%);
   --contour-clr: rgb(0 0 0);
@@ -32,19 +32,16 @@
   --main-body-active-clr: #f00;
 
   --grid-bg: 
-    /* Горизонтальные полосы */
     repeating-linear-gradient(
     to right,
     #d3d3d3 0 2px,
     transparent 2px 4px
   ),
-  /* Вертикальные полосы */
   repeating-linear-gradient(
     to bottom,
     #d3d3d3 0 2px,
     transparent 2px 4px
   ),
-  /* Плавный градиент сверху вниз */
   linear-gradient(
     to bottom,
     #e7e7e7 0%,

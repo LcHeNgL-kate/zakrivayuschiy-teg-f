@@ -3,6 +3,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb; 
   background-image: var(--grid-bg);
+  /* спасибо, больше не съезжает в бок */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -118,6 +119,8 @@
   outline: 2px solid #000;
 }
 
+/* фильты автобуса картинок */
+
 .filter__saturate {
   filter: saturate(1);
 }
@@ -168,7 +171,6 @@
   pointer-events: none;
   z-index: 2;
   -webkit-text-stroke: 1px var(--label-stroke);
-  /* Фолбэк через тень */
   text-shadow:
   1px 0 var(--label-stroke),
   -1px 0 var(--label-stroke),
@@ -209,6 +211,8 @@
   cursor: pointer;
   inline-size: 43px;
 }
+
+/* эти  классы свг норм работал красиво */
 
 .like-icon {
   transform-origin: center;
@@ -359,6 +363,8 @@
   height: 28px;
 }
 
+/* пропавщий нов слайд */
+
 .dialog {
   position: fixed;
   inset: 0;
@@ -410,7 +416,9 @@
   background-color: rgb(0 0 0 / 75%);
 }
 
-/* ===== ADAPTIVE ===== */
+/* изменения размера
+убрала на 300px убрала, потому что вспомнила */
+/* что в прощлом говорила убрать его на базу, ведь могут быть меньше */
 
 @media (max-width: 768px) { 
   .footer__button {
