@@ -1,4 +1,5 @@
 <svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="heart3" viewBow="0 0 39 36">
 <path d="M12 6H9V9H12V6Z" fill="#FF0000"/>
 <path d="M12 9H9V12H12V9Z" fill="#FF0000"/>
 <path d="M15 12H12V15H15V12Z" fill="#FF0000"/>
@@ -46,4 +47,5 @@
 <path d="M21 18H18V21H21V18Z" fill="#FF0000"/>
 <path d="M21 24H18V27H21V24Z" fill="#FF0000"/>
 <path d="M21 27H18V30H21V27Z" fill="#FF0000"/>
+</symbol>
 </svg>

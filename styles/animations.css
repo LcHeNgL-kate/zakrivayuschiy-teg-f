@@ -1,18 +1,15 @@
 
-/* просто клик */
-
-@keyframes heartHoverAnimation {
-    0% {content: url('../svg/heart-initial.svg');}
-    33% {content: url('../svg/heart-starting.svg');}
-    66%, 100% {content: url('../svg/heart-glow.svg');}
+@keyframes icon-scaling {
+   0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
 }
-
-/* зажать тип долго */
-@keyframes heartHoldAnimation {
-  0% { content: url('../svg/heart-initial.svg'); }
-  16.67% { content: url('../svg/heart-hold-starting.svg'); }
-  33.33% { content: url('../svg/heart-hold-glow.svg'); }
-  50% { content: url('../svg/heart-hold-big.svg'); }
-  66.67% { content: url('../svg/heart-hold-sparkles.svg'); }
-  83.33%, 100% { content: url('../svg/heart-hold-final.svg'); }
-}
+ 
+@keyframes sparks-coloring {
+   100% {
+     fill: var(--sparks-fill-clr);
+   }
+ }

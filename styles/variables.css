@@ -1,34 +1,54 @@
 :root {
-    --main-font: Inter-Variable;
-    --accent-font: 'PressStart2P';
-    --wgt-text: 410;
-    --wgt-accent: 715;
-    --main-font-size: 18px;
-    --button-font-size: 14px;
-    --dinamic-font-title: clamp(49px, 65px, 65px);
-    --dinamic-font-text: clamp(14px, 23px, 23px);
-    --gradient-background:
-    repeating-linear-gradient(
-        90deg,
-        #d3d3d3 0px, #d3d3d3 2px,
-        transparent 2px, transparent 4px
-    ),
-    repeating-linear-gradient(
-        0deg,
-        #d3d3d3 0px, #d3d3d3 2px,
-        transparent 2px, transparent 4px
-    ),
-    linear-gradient(
-        to bottom,
-        #e7e7e7 0%, #e7e7e7 1%,
-        #1a1a1a 100%
-    );
-    --block-width: clamp(375px, 700px, 90vw);
-    --block-height: clamp(327px, 368px, 90vh);
-}
+  --font-sans: 'Inter'; 
+  --font-mono: 'PressStart2P', fantasy; 
+  --text-weight: 410;    
+  --heading-weight: 715;
+  --accent-weight: 400; 
+    /* Резиновые значения для шапки */
+  --header-width: clamp(375px, 80%, 700px);
+  --header-height: clamp(250px, 40vh, 368px);
+  --logo-size: clamp(49px, 10vw, 65px);
+  --title-font-size: clamp(1.25rem, 0.6667rem + 3.1111vw, 3rem);
+  --subtitle-font-size: clamp(0.875rem, 0.6875rem + 1vw, 1.4375rem);
 
-@media (max-width: 375px) {
-  :root {
-    --block-height: clamp(327px, 368px, 0vh);
-  }
+  --background-clr: #fff;
+  --card-bg: #fff;
+  --label-color: #000; 
+  --label-stroke: #fff; 
+  --text: #000;
+  --card-padding: 25px;
+  --transition-mid: 0.3s;
+
+  /* heart SVG */
+  --sparks-fill-clr: #f00;
+  --sparks-fill-clr-transparent: rgb(255 0 0 / 0%);
+  --contour-clr: rgb(0 0 0);
+  --core-clr: rgb(0 0 0);
+  --core-clr-transparent: rgb(0 0 0 / 0%);
+  --main-body-clr: rgb(0 0 0);
+  --main-body-clr-transparent: rgb(0 0 0 / 0%);
+  --contour-active-clr: #f00;
+  --core-active-clr: #f00;
+  --main-body-active-clr: #f00;
+
+  --grid-bg: 
+    /* Горизонтальные полосы */
+    repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  ),
+  /* Вертикальные полосы */
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  ),
+  /* Плавный градиент сверху вниз */
+  linear-gradient(
+    to bottom,
+    #e7e7e7 0%,
+    #e7e7e7 0.01%,
+    #1a1a1a 100%
+  );
 }
