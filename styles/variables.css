@@ -4,6 +4,7 @@
   --text-weight: 410;    
   --heading-weight: 715;
   --accent-weight: 400; 
+  --border-width:2px;
 
   --header-width: clamp(375px, 80%, 700px);
   --header-height: clamp(250px, 40vh, 368px);
